@@ -1,6 +1,6 @@
 # Job Board (Django/Nuxt.js)
 
-a job board from scratch using Django and Nuxt 3 (Vue 3). and Other technologies such as Tailwind, Pinia, Django Rest Framework.
+a job board Web application using Django and Nuxt 3 (Vue 3). and Other technologies such as Tailwind, Pinia, Django Rest Framework.
 
 # Project Structure
 
