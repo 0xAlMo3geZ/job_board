@@ -8,6 +8,16 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
 .
 ├── backend
 ├── frontend
+│   ├── app.vue
+│   ├── assets
+│   ├── node_modules
+│   ├── nuxt.config.ts
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── public
+│   ├── server
+│   ├── tailwind.config.js
+│   └── tsconfig.json
 ├── README.md
 └── requirements.txt
 ```
@@ -15,7 +25,7 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
 ## TODO:
 
 ```
-[] Set up the frontend
+[*] Set up the frontend
    - Create an empty project
    - Make sure you can run the project
    - Install Pinia
