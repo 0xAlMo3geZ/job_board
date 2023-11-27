@@ -30,7 +30,7 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
    - Make sure you can run the project
    - Install Pinia
    - Install tailwind
-[] Set up a simple layout (menu, footer, etc)
+[*] Set up a simple layout (menu, footer, etc)
 [] Create a static frontpage
 [] Create a static browse page
 [] Create a static detail page
