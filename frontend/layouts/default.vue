@@ -10,7 +10,7 @@
                 </NuxtLink>
             </div>
             <div class="relative">
-                <input type="text" placeholder="Search jobs"
+                <input type="search" placeholder="Search jobs"
                     class="pl-8 pr-4 py-2 border rounded-md outline-none text-gray-700">
                 <svg class="absolute left-2 top-2 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                     width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"

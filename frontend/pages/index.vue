@@ -22,7 +22,8 @@
                         <!-- Job Description -->
                         <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
                         <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-blue-500 text-white px-4 py-2 rounded-md text-center">Apply Now</a>
+                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
+                            Now</a>
                     </div>
                 </div>
                 <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
@@ -36,7 +37,8 @@
                         <!-- Job Description -->
                         <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
                         <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-blue-500 text-white px-4 py-2 rounded-md text-center">Apply Now</a>
+                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
+                            Now</a>
                     </div>
                 </div>
                 <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
@@ -50,7 +52,8 @@
                         <!-- Job Description -->
                         <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
                         <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-blue-500 text-white px-4 py-2 rounded-md text-center">Apply Now</a>
+                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
+                            Now</a>
                     </div>
                 </div>
                 <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
@@ -64,7 +67,8 @@
                         <!-- Job Description -->
                         <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
                         <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-blue-500 text-white px-4 py-2 rounded-md text-center">Apply Now</a>
+                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
+                            Now</a>
                     </div>
                 </div>
             </div>
@@ -93,5 +97,4 @@
 
 .animated-text {
     animation: bounce 2s infinite;
-}
-</style>
+}</style>

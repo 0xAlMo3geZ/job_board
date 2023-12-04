@@ -32,6 +32,7 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
    - Install tailwind
 [*] Set up a simple layout (menu, footer, etc)
 [*] Create a static frontpage
+[*] Create a static about page
 [] Create a static browse page
 [] Create a static detail page
 [] Create a static log in page
