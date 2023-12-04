@@ -42,11 +42,11 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
 [*] A job position should be a component
 [*] Implement state management for users
 [*] When authenticated, replace footer buttons with “create job” button
-[] Set up the backend
+[*] Set up the backend
    - Create virtual environment, install Django, Django Rest Framework, Cors headers and Djoser
    - Create an empty Django project
    - Configure the settings and urls.py
-[] Create app for jobs
+[*] Create app for jobs
 [] Set up database models
 [] Make front page dynamic
    - Serializer
