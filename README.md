@@ -47,7 +47,7 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
    - Create an empty Django project
    - Configure the settings and urls.py
 [*] Create app for jobs
-[] Set up database models
+[*] Set up database models
 [] Make front page dynamic
    - Serializer
    - View
