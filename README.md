@@ -33,15 +33,15 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
 [*] Set up a simple layout (menu, footer, etc)
 [*] Create a static frontpage
 [*] Create a static about page
-[] Create a static browse page
-[] Create a static detail page
-[] Create a static log in page
-[] Create a static sign up page
-[] Create a static page for creating jobs
-[] Create static page for “my jobs”
-[] A job position should be a component
-[] Implement state management for users
-[] When authenticated, replace footer buttons with “create job” button
+[*] Create a static browse page
+[*] Create a static detail page
+[*] Create a static log in page
+[*] Create a static sign up page
+[*] Create a static page for creating jobs
+[*] Create static page for “my jobs”
+[*] A job position should be a component
+[*] Implement state management for users
+[*] When authenticated, replace footer buttons with “create job” button
 [] Set up the backend
    - Create virtual environment, install Django, Django Rest Framework, Cors headers and Djoser
    - Create an empty Django project
