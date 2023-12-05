@@ -1,3 +1,13 @@
+<script setup>
+import { useUserStore } from '@/stores/user';
+
+const userStore = useUserStore()
+
+function logout() {
+    userStore.removeToken()
+}
+</script>
+
 <template>
     <div>
         <nav class="p-6 flex items-center justify-between bg-cyan-800">
@@ -69,16 +79,28 @@
                 <!-- Input Container -->
                 <div class="flex flex-col justify-between">
                     <div class="flex items-center space-x-4">
-                        <NuxtLink to="/login" class="py-2 px-4 text-white bg-cyan-500 hover:bg-cyan-700 rounded-xl">Login
-                        </NuxtLink>
-                        <NuxtLink to="/signup" class="py-2 px-4 text-white bg-cyan-600 hover:bg-cyan-700 rounded-xl">Sign up
-                        </NuxtLink>
+                        <template v-if="userStore.user.isAuthenticated">
+                            <NuxtLink to="/myjobs" class="py-4 px-6 bg-teal-900 hover:bg-teal-700 text-white rounded-xl">My
+                                jobs</NuxtLink>
+                            <NuxtLink to="/createjob" class="py-4 px-6 bg-teal-600 hover:bg-teal-700 text-white rounded-xl">
+                                Create job</NuxtLink>
+                            <a v-on:click="logout" class="py-4 px-6 bg-rose-600 hover:bg-rose-700 text-white rounded-xl">Log
+                                out</a>
+                        </template>
+
+                        <template v-else>
+                            <NuxtLink to="/login" class="py-2 px-4 text-white bg-cyan-500 hover:bg-cyan-700 rounded-xl">
+                                Login
+                            </NuxtLink>
+                            <NuxtLink to="/signup" class="py-2 px-4 text-white bg-cyan-600 hover:bg-cyan-700 rounded-xl">
+                                Sign up
+                            </NuxtLink>
+                        </template>
                     </div>
                     <div class="hidden text-white text-sm mt-4 md:block">
                         Copyright &copy; 2023 - <i>@0xAlMo3geZ</i>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
-</template>
+        </div>
+    </footer>
+</div></template>

@@ -48,19 +48,19 @@ a job board Web application using Django and Nuxt 3 (Vue 3). and Other technolog
    - Configure the settings and urls.py
 [*] Create app for jobs
 [*] Set up database models
-[] Make front page dynamic
+[*] Make front page dynamic
    - Serializer
    - View
    - Frontend
-[] Make detail dynamic (Separate serializer with more data)
-[] Make browse dynamic
-[] Make it possible to sign up
-[] Make it possible to log in
-[] Initialize the user store after refresh
-[] Make it possible to log out
-[] Show your jobs
-[] Make it possible to create a job
-[] Make it possible to delete job
-[] Make it possible to edit a job
-[] Implement meta data on pages
+[*] Make detail dynamic (Separate serializer with more data)
+[*] Make browse dynamic
+[*] Make it possible to sign up
+[*] Make it possible to log in
+[*] Initialize the user store after refresh
+[*] Make it possible to log out
+[*] Show your jobs
+[*] Make it possible to create a job
+[*] Make it possible to delete job
+[*] Make it possible to edit a job
+[*] Implement meta data on pages
 ```

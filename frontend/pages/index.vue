@@ -1,3 +1,7 @@
+<script setup>
+const { data: jobs } = await useFetch('http://127.0.0.1:8000/api/v1/jobs/newest/')
+</script>
+
 <template>
     <div class="min-h-screen bg-gray-100">
         <div class="py-20 px-6 bg-cyan-700 text-center">
@@ -9,72 +13,14 @@
         </div>
         <div class="py-10 px-6">
             <h2 class="text-center text-2xl font-semibold text-gray-800">Newest Jobs</h2>
-            <div class="container grid grid-cols-3 gap-6 mx-auto p-8">
-                <!-- Job Card -->
-                <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
-                    <div class="p-4">
-                        <!-- Job Title -->
-                        <h2 class="text-xl font-semibold text-gray-800">Software Engineer</h2>
-                        <!-- Company Name -->
-                        <p class="text-gray-600 mt-2">Acme Corporation</p>
-                        <!-- Job Location -->
-                        <p class="text-gray-600 mt-2">San Francisco, CA</p>
-                        <!-- Job Description -->
-                        <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
-                        <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
-                            Now</a>
-                    </div>
-                </div>
-                <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
-                    <div class="p-4">
-                        <!-- Job Title -->
-                        <h2 class="text-xl font-semibold text-gray-800">Software Engineer</h2>
-                        <!-- Company Name -->
-                        <p class="text-gray-600 mt-2">Acme Corporation</p>
-                        <!-- Job Location -->
-                        <p class="text-gray-600 mt-2">San Francisco, CA</p>
-                        <!-- Job Description -->
-                        <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
-                        <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
-                            Now</a>
-                    </div>
-                </div>
-                <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
-                    <div class="p-4">
-                        <!-- Job Title -->
-                        <h2 class="text-xl font-semibold text-gray-800">Software Engineer</h2>
-                        <!-- Company Name -->
-                        <p class="text-gray-600 mt-2">Acme Corporation</p>
-                        <!-- Job Location -->
-                        <p class="text-gray-600 mt-2">San Francisco, CA</p>
-                        <!-- Job Description -->
-                        <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
-                        <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
-                            Now</a>
-                    </div>
-                </div>
-                <div class="max-w-md mx-auto bg-white rounded-md overflow-hidden shadow-md">
-                    <div class="p-4">
-                        <!-- Job Title -->
-                        <h2 class="text-xl font-semibold text-gray-800">Software Engineer</h2>
-                        <!-- Company Name -->
-                        <p class="text-gray-600 mt-2">Acme Corporation</p>
-                        <!-- Job Location -->
-                        <p class="text-gray-600 mt-2">San Francisco, CA</p>
-                        <!-- Job Description -->
-                        <p class="text-gray-700 mt-4">We are looking for a skilled software engineer...</p>
-                        <!-- Apply Button -->
-                        <a href="#" class="mt-4 block bg-green-500 text-white px-4 py-2 rounded-md text-center">Apply
-                            Now</a>
-                    </div>
-                </div>
+
+            <div class="space-y-4">
+                <Job v-for="job in jobs" v-bind:key="job.id" v-bind:job="job" />
             </div>
         </div>
     </div>
 </template>
+
 <style scoped>
 @keyframes bounce {
 
@@ -97,4 +43,5 @@
 
 .animated-text {
     animation: bounce 2s infinite;
-}</style>
+}
+</style>
