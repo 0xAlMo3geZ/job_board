@@ -19,16 +19,6 @@ function logout() {
                     </div>
                 </NuxtLink>
             </div>
-            <div class="relative">
-                <input type="search" placeholder="Search jobs"
-                    class="pl-8 pr-4 py-2 border rounded-md outline-none text-gray-700">
-                <svg class="absolute left-2 top-2 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                    width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                </svg>
-            </div>
             <div class="flex items-center space-x-4">
                 <NuxtLink to="/" class="text-white hover:text-cyan-300">Home</NuxtLink>
                 <NuxtLink to="/Jobs" class="text-white hover:text-cyan-300">Jobs</NuxtLink>
@@ -101,6 +91,7 @@ function logout() {
                         Copyright &copy; 2023 - <i>@0xAlMo3geZ</i>
                     </div>
                 </div>
-        </div>
-    </footer>
-</div></template>
+            </div>
+        </footer>
+    </div>
+</template>

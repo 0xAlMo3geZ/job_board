@@ -1,25 +1,83 @@
 # Job Board (Django/Nuxt.js)
 
+<img align="center" src="./photo.png" />
+
 a job board Web application using Django and Nuxt 3 (Vue 3). and Other technologies such as Tailwind, Pinia, Django Rest Framework.
 
-# Project Structure
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/0xAlMo3geZ/job_board.git
+
+# Change directory to the project folder
+cd job_board
+
+# Create a virtual environment (optional but recommended)
+python3 -m venv venv
+
+# Activate the virtual environment
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies (Back-end)
+pip install -r requirements.txt
+
+# Install dependencies (Front-end)
+cd frontend
+npm install
+```
+
+## Usage
+
+```bash
+# Run the database migrations
+cd backend
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+# Start the Server (Backend)
+python3 manage.py runserver
+
+# Start the Server (Frontend)
+cd frontend
+npm run dev
+
+# Access the Web Application
+https://localhost:3000
+```
+
+## Project Structure
 
 ```
 .
+├── README.md
 ├── backend
+│   ├── backend
+│   ├── db.sqlite3
+│   ├── job
+│   └── manage.py
 ├── frontend
 │   ├── app.vue
 │   ├── assets
+│   ├── components
+│   ├── layouts
 │   ├── node_modules
 │   ├── nuxt.config.ts
-│   ├── package.json
 │   ├── package-lock.json
+│   ├── package.json
+│   ├── pages
 │   ├── public
 │   ├── server
+│   ├── stores
 │   ├── tailwind.config.js
 │   └── tsconfig.json
-├── README.md
-└── requirements.txt
+├── requirements.txt
+└── venv
+    ├── bin
+    ├── include
+    ├── lib
+    ├── lib64 -> lib
+    └── pyvenv.cfg
 ```
 
 ## TODO:
