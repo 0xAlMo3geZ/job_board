@@ -2,8 +2,6 @@
 
 <img align="center" src="./photo.png" />
 
-a job board Web application using Django and Nuxt 3 (Vue 3). and Other technologies such as Tailwind, Pinia, Django Rest Framework.
-
 ## Installation
 
 ```bash
